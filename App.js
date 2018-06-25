@@ -32,10 +32,24 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           To get started, edit App.js
         </Text>
-          {cunstomBtn1(()=>{
+          {cunstomBtn1({
+              backgroundColor: 'green',
+              height: 50,
+              width: 200,
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginTop:10,
+          },()=>{
             alert('我是cunstomBtn1')
           })}
-          {cunstomBtn11((()=>{
+          {cunstomBtn11({
+              backgroundColor: 'green',
+              height: 50,
+              width: 200,
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginTop:10,
+          },(()=>{
               alert('我是cunstomBtn11')
           }))}
           {cunstomBtn2((()=>{

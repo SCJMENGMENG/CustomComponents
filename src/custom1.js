@@ -7,10 +7,10 @@ import {
     StyleSheet,
 } from 'react-native';
 
-function cunstomBtn1(onPress) {
+function cunstomBtn1(bg_styles,onPress) {
     return (
         <TouchableOpacity
-            style={styles.btnStyle}
+            style={bg_styles}
             onPress={onPress}
         >
             <Text style={styles.btnText}>我是通用按钮1->点我</Text>
@@ -18,10 +18,10 @@ function cunstomBtn1(onPress) {
     )
 }
 
-function cunstomBtn11(onPress) {
+function cunstomBtn11(bg_styles,onPress) {
     return (
         <TouchableOpacity
-            style={styles.btnStyle}
+            style={bg_styles}
             onPress={onPress}
         >
             <Text style={styles.btnText}>我是通用按钮11->点我</Text>
@@ -30,14 +30,6 @@ function cunstomBtn11(onPress) {
 }
 
 const styles = StyleSheet.create({
-    btnStyle: {
-        backgroundColor: 'green',
-        height: 50,
-        width: 200,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop:10,
-    },
     btnText: {
         color: 'white',
         fontSize: 16,
